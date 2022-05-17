@@ -52,7 +52,7 @@ Chilean Payroll & Human Resources.
         'views/report_payslip.xml',
         'views/report_hrsalarybymonth.xml',
         #TODO: Revisar
-        #'views/hr_salary_books.xml',
+        # 'views/hr_salary_books.xml',
         'views/hr_holiday_views.xml',
         'views/wizard_export_csv_previred_view.xml',
         'data/hr_salary_rule_category.xml',

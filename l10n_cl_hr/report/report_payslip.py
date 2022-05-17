@@ -1,8 +1,8 @@
 from odoo import api, models
 
 
-class HrPayrollReport(models.AbstractModel):
-    _inherit = 'report.hr.payroll.report'
+class payslip_report(models.AbstractModel):
+    _inherit = 'report.hr_payroll.report_payslip'
 
     @api.model
     def _get_report_values(self, docids, data=None):
