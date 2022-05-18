@@ -71,7 +71,7 @@ Chilean Payroll & Human Resources.
         'data/account_journal.xml',
         #TODO: Por ahora no se usa
         #'data/partner.xml',
-        #'data/l10n_cl_hr_payroll_data.xml',
+        # 'data/l10n_cl_hr_payroll_data.xml',
         'security/ir.model.access.csv',
     ],
     'demo': ['demo/l10n_cl_hr_payroll_demo.xml'],
