@@ -19,7 +19,7 @@
 
         <menuitem id="menu_cl_hr_payroll_master_data"
                   name="Master Data"
-                  parent="hr_payroll.menu_hr_payroll_employees_root"
+                  parent="hr_work_entry_contract.menu_hr_payroll_root"
                   sequence="5" groups="hr_payroll.group_hr_payroll_user"/>
 
         <menuitem id="menu_cl_hr_payroll_reports" name="Reports"
@@ -29,7 +29,7 @@
 
         <menuitem id="menu_cl_hr_payroll_configuration"
                   name="Chilean Configuration"
-                  parent="hr_payroll.menu_hr_payroll_employees_configuration"
+                  parent="hr_work_entry_contract.menu_hr_payroll_configuration"
                   sequence="101"
                   groups="hr_payroll.group_hr_payroll_user"/>
 
@@ -55,10 +55,10 @@
                   parent="menu_cl_hr_payroll_master_data"
                   sequence="2" groups="hr_payroll.group_hr_payroll_user"/>
 
-        <!--<menuitem id="cl_hr_menu_hr_department_tree"
-            action="hr.open_module_tree_department"
+        <menuitem id="cl_hr_menu_hr_department_tree"
+            action="hr.hr_department_tree_action"
             parent="menu_cl_hr_payroll_master_data" sequence="3"
-            groups="hr.group_hr_user" />-->
+            groups="hr.group_hr_user" />
 
         <menuitem id="cl_hr_menu_view_employee_category_form"
                   action="hr.open_view_categ_form"
