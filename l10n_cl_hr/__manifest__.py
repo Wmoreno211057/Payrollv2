@@ -86,7 +86,9 @@ Chilean Payroll & Human Resources.
         # Reports
         'report/hr_salary_books.xml',
     ],
-    'demo': ['demo/l10n_cl_hr_payroll_demo.xml'],
+    'demo': [
+        # 'demo/l10n_cl_hr_payroll_demo.xml'
+    ],
     'installable': True,
     'application': True,
     'auto_install': False
