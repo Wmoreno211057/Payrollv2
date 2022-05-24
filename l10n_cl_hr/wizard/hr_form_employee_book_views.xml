@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_salary_employee_month" model="ir.ui.view">
+            <field name="name">Libro de Remuneraciones</field>
+            <field name="model">hr.salary.employee.month</field>
+            <field name="arch" type="xml">
+                <form string="Libro de Remuneraciones">
+                    <span class="o_form_label">Este wizard permite imprimir el
+                        total haberes</span>
+                    <footer>
+                        <button name="print_report" string="Print" type="object"
+                                class="oe_highlight"/>or
+                        <button string="Cancel" class="oe_link"
+                                special="cancel"/>
+                    </footer>
+                    <group>
+                        <field name="end_date"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_salary_books" model="ir.actions.act_window">
+            <field name="name">Libro de Remuneraciones Haberes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.salary.employee.month</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+
+        <menuitem
+                name="Libro de Remuneraciones"
+                parent="hr_payroll.menu_hr_payroll_report"
+                sequence="10"
+                action="action_salary_books"
+                id="menu_salary_books"/>
+<!--                icon="STOCK_PRINT"-->
+    </data>
+
+</odoo>

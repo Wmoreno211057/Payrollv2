@@ -1,3 +1,11 @@
+
+
+
+
+
+
+
+
 {
     'name': 'Chilean Payroll & Human Resources',
     'author': 'Konos',
@@ -41,7 +49,11 @@ Chilean Payroll & Human Resources.
   """,
     'category': 'Localization/Chile',
     'data': [
+        # Security
+        'security/ir.model.access.csv',
+        # Menus
         'views/menu_root.xml',
+        # Views
         'views/hr_indicadores_previsionales_view.xml',
         'views/hr_salary_rule_view.xml',
         'views/hr_contract_view.xml',
@@ -51,10 +63,8 @@ Chilean Payroll & Human Resources.
         'views/hr_payslip_run_view.xml',
         'views/report_payslip.xml',
         'views/report_hrsalarybymonth.xml',
-        #TODO: Revisar
-        # 'views/hr_salary_books.xml',
         'views/hr_holiday_views.xml',
-        'views/wizard_export_csv_previred_view.xml',
+        # Datas
         'data/hr_salary_rule_category.xml',
         'data/hr_centros_costos.xml',
         'data/l10n_cl_hr_indicadores.xml',
@@ -63,16 +73,18 @@ Chilean Payroll & Human Resources.
         'data/l10n_cl_hr_mutual.xml',
         'data/l10n_cl_hr_apv.xml',
         'data/hr_type_employee.xml',
-        #TODO: Revisar
-        #'data/resource_calendar_attendance.xml',
+        # 'data/resource_calendar_attendance.xml',
         'data/hr_holidays_status.xml',
         'data/hr_contract_type.xml',
         'data/l10n_cl_hr_ccaf.xml',
         'data/account_journal.xml',
-        #TODO: Por ahora no se usa
-        #'data/partner.xml',
-        # 'data/l10n_cl_hr_payroll_data.xml',
-        'security/ir.model.access.csv',
+        'data/res_partner.xml',
+        'data/l10n_cl_hr_payroll_data.xml',
+        # Wizards
+        'wizard/wizard_export_csv_previred_views.xml',
+        'wizard/hr_form_employee_book_views.xml',
+        # Reports
+        'report/hr_salary_books.xml',
     ],
     'demo': ['demo/l10n_cl_hr_payroll_demo.xml'],
     'installable': True,
