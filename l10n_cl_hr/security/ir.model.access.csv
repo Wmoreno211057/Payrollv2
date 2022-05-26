@@ -10,3 +10,4 @@ access_hr_ccaf,hr.ccaf,model_hr_ccaf,hr_payroll.group_hr_payroll_manager,1,1,1,1
 access_hr_seguro_complementario,hr.seguro.complementario,model_hr_seguro_complementario,hr_payroll.group_hr_payroll_manager,1,1,1,1
 access_hr_apv,hr.apv,model_hr_apv,hr_payroll.group_hr_payroll_manager,1,1,1,1
 access_hr_salary_employee_month,hr.salary.employee.month,model_hr_salary_employee_month,hr_payroll.group_hr_payroll_manager,1,1,1,1
+access_wizard_export_csv_previred,wizard.export.csv.previred,model_wizard_export_csv_previred,hr_payroll.group_hr_payroll_manager,1,1,1,1
