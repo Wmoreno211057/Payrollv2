@@ -29,7 +29,7 @@
         "Daniel Santibáñez Polanco <dsantibanez@globalresponse.cl>",
     ],
     'license': 'AGPL-3',
-    'version': '12.0.1.0.4',
+    'version': '14.0.1.0.4',
     'description': """
 Chilean Payroll & Human Resources.
 ==================================
