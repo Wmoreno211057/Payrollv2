@@ -14,13 +14,13 @@
 
         <menuitem id="menu_cl_hr_payroll_indicators" name="Previsión"
                   parent="hr_work_entry_contract.menu_hr_payroll_root"
-                  sequence="4"
+                  sequence="50"
                   groups="hr_payroll.group_hr_payroll_user"/>
 
         <menuitem id="menu_cl_hr_payroll_master_data"
                   name="Master Data"
                   parent="hr_work_entry_contract.menu_hr_payroll_root"
-                  sequence="5" groups="hr_payroll.group_hr_payroll_user"/>
+                  sequence="51" groups="hr_payroll.group_hr_payroll_user"/>
 
         <menuitem id="menu_cl_hr_payroll_reports" name="Reports"
                   parent="hr_payroll.menu_hr_payroll_employees_root"
