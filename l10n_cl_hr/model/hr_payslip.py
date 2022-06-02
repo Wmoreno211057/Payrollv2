@@ -72,3 +72,13 @@ class HrPayslip(models.Model):
         res.append(effective)
         res.extend(leaves)
         return res
+
+class HrPayslipLine(models.Model):
+    _inherit = 'hr.payslip.line'
+    _description = 'Hr Payslip Line Inherit'
+
+    register_id = fields.Many2one('hr.contribution.register',
+                                  string='Contribution Register',
+                                  help="Eventual third party involved in the salary payment of the employees.")
+
+

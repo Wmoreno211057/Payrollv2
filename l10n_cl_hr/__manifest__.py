@@ -64,6 +64,7 @@ Chilean Payroll & Human Resources.
         'views/report_payslip.xml',
         'views/report_hrsalarybymonth.xml',
         'views/hr_holiday_views.xml',
+        'views/hr_contribution_register_view.xml',
         # Datas
         'data/hr_salary_rule_category.xml',
         'data/hr_centros_costos.xml',
