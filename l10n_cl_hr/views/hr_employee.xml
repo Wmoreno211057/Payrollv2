@@ -5,20 +5,38 @@
         <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
+           <!-- <xpath expr="//div[hasclass('oe_title')]/h1" position="after">
+                &lt;!&ndash; Add your fields or attributes here &ndash;&gt;
+                <group>
+                    <label for="firstname" class="oe_edit_only"/>
+                    <h2>
+                        <field name="firstname" placeholder="First Name"
+                               required="1"/>
+                    </h2>
+
+                    <label for="middle_name" class="oe_edit_only"/>
+                    <h2>
+                        <field name="middle_name" placeholder="Middle Name"/>
+                    </h2>
+
+                    <label for="last_name" class="oe_edit_only"/>
+                    <h2>
+                        <field name="last_name" placeholder="Last Name"
+                               required="1"/>
+                    </h2>
+
+                    <label for="mothers_name" class="oe_edit_only"/>
+                    <h2>
+                        <field name="mothers_name" placeholder="Mother's Name"/>
+                    </h2>
+                </group>
+            </xpath>-->
             <xpath expr="//field[@name='department_id']" position="before">
                 <field name="type_id" required="1"/>
             </xpath>
 
-            <!--<xpath expr="//label[@for='name']" position="attributes">
-                <attribute name="invisible">1</attribute>
-            </xpath>
-            <xpath expr="//field[@name='name']" position="attributes">
-                <attribute name="invisible">1</attribute>
-                <attribute name="no_label">1</attribute>
-                <attribute name="required">0</attribute>
-            </xpath>-->
-
-            <xpath expr="//field[@name='name']/.." position="replace">
+            <!--<xpath expr="//field[@name='name']/.." position="replace">-->
+            <xpath expr="//div[hasclass('oe_title')]/h2" position="before">
                 <label for="firstname" class="oe_edit_only"/>
                     <h1>
                         <field name="firstname" required="1"/>
@@ -36,11 +54,19 @@
                     	<field name="mothers_name"/>
                  	</h1>
             </xpath>
-            <xpath expr="//field[@name='resource_calendar_id']" position="replace">
-                <field name="resource_calendar_id" select="hr_resource_monthly_cl"/>
+
+            <xpath expr="//div[hasclass('oe_title')]/h1" position="attributes">
+                <attribute name="invisible">1</attribute>
             </xpath>
 
-            <xpath expr="//field[@name='identification_id']" position="attributes">
+            <xpath expr="//field[@name='resource_calendar_id']"
+                   position="replace">
+                <field name="resource_calendar_id"
+                       select="hr_resource_monthly_cl"/>
+            </xpath>
+
+            <xpath expr="//field[@name='identification_id']"
+                   position="attributes">
                 <attribute name="required">1</attribute>
             </xpath>
             <xpath expr="//field[@name='country_id']" position="attributes">
@@ -51,7 +77,6 @@
             </xpath>
         </field>
     </record>
-
 
 
 </odoo>
