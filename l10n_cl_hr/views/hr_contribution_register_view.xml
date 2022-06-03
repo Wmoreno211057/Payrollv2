@@ -86,8 +86,8 @@
         <!-- This Menu Item must have a parent and an action -->
         <menuitem id="l10n_cl_hr_contribution_register_menu"
                   name="Registro de Contribución"
-                  parent="menu_cl_hr_payroll_configuration"
+                  parent="hr_payroll.menu_hr_salary_configuration"
                   action="action_contribution_register_form"
-                  sequence="102"/>
+                  sequence="31"/>
     </data>
 </odoo>
