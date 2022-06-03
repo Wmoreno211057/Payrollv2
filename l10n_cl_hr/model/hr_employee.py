@@ -17,7 +17,7 @@ class HrEmployee(models.Model):
     type_id = fields.Many2one('hr.type.employee', 'Tipo de Empleado')
     formated_vat = fields.Char(translate=True, string='Printable VAT', store=True, help='Show formatted vat')
 
-    @api.onchange('firstname', 'last_name', 'mothers_name')
+    @api.onchange('firstname', 'last_name', 'middle_name', 'mothers_name')
     def _onchange_con_name(self):
         if self.firstname and self.last_name and self.mothers_name:
             self.name = ' '.join([self.firstname, self.middle_name or '',
