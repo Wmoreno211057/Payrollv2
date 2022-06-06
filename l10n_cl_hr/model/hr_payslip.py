@@ -13,7 +13,7 @@ class HrPayslip(models.Model):
     indicadores_id = fields.Many2one('hr.indicadores', string='Indicadores',
         readonly=True, states={'draft': [('readonly', False)]},
         help='Defines Previred Forecast Indicators')
-    movimientos_personal = fields.Selection((('0', 'Sin Movimiento en el Mes'),
+    movimientos_personal = fields.Selection([('0', 'Sin Movimiento en el Mes'),
      ('1', 'Contratación a plazo indefinido'),
      ('2', 'Retiro'),
      ('3', 'Subsidios (L Médicas)'),
@@ -24,7 +24,7 @@ class HrPayslip(models.Model):
      ('8', 'Cambio Contrato plazo fijo a plazo indefinido'),
      ('11', 'Otros Movimientos (Ausentismos)'),
      ('12', 'Reliquidación, Premio, Bono')     
-     ), 'Código Movimiento', default="0")
+     ], 'Código Movimiento', default="0")
 
     date_start_mp = fields.Date('Fecha Inicio MP',  help="Fecha de inicio del movimiento de personal")
     date_end_mp = fields.Date('Fecha Fin MP',  help="Fecha del fin del movimiento de personal")
