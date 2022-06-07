@@ -4,9 +4,9 @@
 		parent="account.menu_finance_reports" sequence="3"
 		groups="account.group_account_user" />
 	<!-- Account Types -->
-	<record id="account_account_type_NCLASIFICADO" model="account.account.type">
+	<!--<record id="account_account_type_NCLASIFICADO" model="account.account.type">
 		<field name="name">Cuentas No Clasificadas</field>
-	</record>
+	</record>-->
 
 	<record id="cl_chart_template_sii" model="account.chart.template">
 		<field name="name">Chile - Plan de Cuentas SII</field>
@@ -1037,13 +1037,13 @@
 		<field name="chart_template_id" ref="cl_chart_template_sii" />
 	</record>
 
-	<record id="540101" model="account.account.template">
+	<!--<record id="540101" model="account.account.template">
 		<field name="name">Mercaderias Recibidas en Consignación</field>
 		<field name="code">540101</field>
 		<field name="reconcile" eval="False" />
 		<field ref="account_account_type_NCLASIFICADO" name="user_type_id" />
 		<field name="chart_template_id" ref="cl_chart_template_sii" />
-	</record>
+	</record>-->
 
 
 

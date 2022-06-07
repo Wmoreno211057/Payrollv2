@@ -6,6 +6,10 @@
 		<field name="model">hr.contract</field>
 		<field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
 		<field name="arch" type="xml">
+			<xpath expr="//field[@name='structure_type_id']" position="after">
+				<!-- Add your fields or attributes here -->
+				<field name="type_id"/>
+			</xpath>
 			<xpath expr="//div[@name='wage']" position="after">
 				<field name="otros_imp" string="Otros Imponible" invisible="1" />
 				<field name="otro_no_imp" string="Otros No Imponible"

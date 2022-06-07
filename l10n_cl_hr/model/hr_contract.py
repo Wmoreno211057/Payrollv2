@@ -28,10 +28,13 @@ class hr_contract(models.Model):
     complete_name = fields.Char(related='employee_id.firstname')
     last_name = fields.Char(related='employee_id.last_name')
     gratificacion_legal = fields.Boolean('Gratificación L. Manual')
-    isapre_moneda= fields.Selection((('uf', 'UF'), ('clp', 'Pesos')), 'Tipo de Moneda', default="uf")
+    isapre_moneda= fields.Selection([('uf', 'UF'), ('clp', 'Pesos')], 'Tipo de Moneda', default="uf")
     apv_id = fields.Many2one('hr.apv', 'Nombre')
     aporte_voluntario = fields.Float('Ahorro Previsional Voluntario (APV)', help="Ahorro Previsional Voluntario (APV)")
-    aporte_voluntario_moneda= fields.Selection((('uf', 'UF'), ('clp', 'Pesos')), 'Tipo de Moneda', default="uf")
-    forma_pago_apv = fields.Selection((('1', 'Directa'), ('2', 'Indirecta')), 'Forma de Pago', default="1")
-    seguro_complementario_moneda= fields.Selection((('uf', 'UF'), ('clp', 'Pesos')), 'Tipo de Moneda', default="uf")
+    aporte_voluntario_moneda= fields.Selection([('uf', 'UF'), ('clp', 'Pesos')], 'Tipo de Moneda', default="uf")
+    forma_pago_apv = fields.Selection([('1', 'Directa'), ('2', 'Indirecta')], 'Forma de Pago', default="1")
+    seguro_complementario_moneda= fields.Selection([('uf', 'UF'), ('clp', 'Pesos')], 'Tipo de Moneda', default="uf")
     codigo = fields.Char('Codigo')
+    type_id = fields.Many2one(string="Estructura Salarial",
+                              comodel_name='hr.payroll.structure',
+                              required=True)
