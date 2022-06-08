@@ -57,6 +57,7 @@ Chilean Payroll & Human Resources.
         'views/hr_contribution_register_view.xml',
         # Datas
         'data/hr_salary_rule_category.xml',
+        # 'data/resource_calendar_attendance.xml',
         'data/hr_centros_costos.xml',
         'data/l10n_cl_hr_indicadores.xml',
         'data/l10n_cl_hr_isapre.xml',
@@ -64,7 +65,6 @@ Chilean Payroll & Human Resources.
         'data/l10n_cl_hr_mutual.xml',
         'data/l10n_cl_hr_apv.xml',
         'data/hr_type_employee.xml',
-        'data/resource_calendar_attendance.xml',
         'data/hr_holidays_status.xml',
         'data/hr_contract_type.xml',
         'data/l10n_cl_hr_ccaf.xml',
