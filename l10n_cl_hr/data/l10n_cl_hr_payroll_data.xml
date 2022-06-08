@@ -3,7 +3,6 @@
     <data>
 
         <!-- Tipos de Contribuyentes -->
-
         <record id="contrib_register_previred" model="hr.contribution.register">
             <field name="name">Previred</field>
             <field name='partner_id' ref='previred'/>
@@ -16,7 +15,6 @@
 
 
         <!-- Decimal Precision -->
-
         <record forcecreate="True" id="hr_payroll.decimal_payroll"
                 model="decimal.precision">
             <field name="name">Payroll</field>
@@ -98,10 +96,9 @@ else:
             <field name="amount_python_compute">result = round(0.005185*contract.wage*inputs.HEXDE.amount)*(-1)</field>
         </record>
 
-        <record id="hr_rule_6" model="hr.salary.rule">
+        <!--<record id="hr_rule_6" model="hr.salary.rule">
             <field name="name">GRATIFICACION LEGAL</field>
             <field name="sequence" eval="8"/>
-            <field name="struct_id" ref="l10n_cl_hr.hr_struct_cl_work_code"/>
             <field name="code">GRAT</field>
             <field name="category_id" ref="IMPONIBLE"/>
             <field name="condition_select">python</field>
@@ -114,7 +111,7 @@ elif GRATI > (4.75 * payslip.indicadores_id.sueldo_minimo /12):
     result = round(((4.75 * payslip.indicadores_id.sueldo_minimo / 12) / 30) * worked_days.WORK100.number_of_days)
 else:
     result = GRATI</field>
-        </record>
+        </record>-->
 
         <record id="hr_rule_7" model="hr.salary.rule">
             <field name="name">BONO DE PRODUCCION</field>
@@ -867,6 +864,7 @@ else:
                    name="rule_ids"/>
         </record>-->
 
+        <!-- Tipos de Estructura -->
         <record id="struct_type_work_code" model="hr.payroll.structure.type">
             <field name="name">Código del Trabajo</field>
             <field name="country_id" ref="base.cl"/>
