@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 {
     'name': 'Chilean Payroll & Human Resources',
     'author': 'Konos',
