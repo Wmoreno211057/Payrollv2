@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<menuitem id="account_reports_cl_statements_menu" name="Chilean Statements"
-		parent="account.menu_finance_reports" sequence="3"
+		parent="account.menu_finance" sequence="3"
 		groups="account.group_account_user" />
 	<!-- Account Types -->
 	<!--<record id="account_account_type_NCLASIFICADO" model="account.account.type">
 		<field name="name">Cuentas No Clasificadas</field>
+		<field name="type">other</field>
+		<field name="internal_group">asset</field>
 	</record>-->
+
+	<record id="account_account_type_NCLASIFICADO" model="account.account.tag">
+        <!-- TotMntExe -->
+       	<field name="name">Cuentas No Clasificadas</field>
+        <field name="applicability">accounts</field>
+    </record>
 
 	<record id="cl_chart_template_sii" model="account.chart.template">
 		<field name="name">Chile - Plan de Cuentas SII</field>

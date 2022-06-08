@@ -40,7 +40,7 @@ class report_hr_salary_employee_bymonth(models.AbstractModel):
             '''select sum(number_of_days) from hr_payslip_worked_days as p
 left join hr_payslip as r on r.id = p.payslip_id
 where r.employee_id = %s  and (to_char(date_to,'mm')= %s)
-and (to_char(date_to,'yyyy')= %s) and ('WORK100' = p.code)
+and (to_char(date_to,'yyyy')= %s) and ('WORK100' = p.work_entry_type_id.code)
 ''', (emp_id, mes, ano,))
 
         max = self.env.cr.fetchone()

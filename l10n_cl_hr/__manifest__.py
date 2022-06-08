@@ -61,8 +61,6 @@ Chilean Payroll & Human Resources.
         'views/hr_payslip_view.xml',
         'views/hr_afp_view.xml',
         'views/hr_payslip_run_view.xml',
-        'views/report_payslip.xml',
-        'views/report_hrsalarybymonth.xml',
         'views/hr_holiday_views.xml',
         'views/hr_contribution_register_view.xml',
         # Datas
@@ -85,6 +83,8 @@ Chilean Payroll & Human Resources.
         'wizard/wizard_export_csv_previred_views.xml',
         'wizard/hr_form_employee_book_views.xml',
         # Reports
+        'report/report_hrsalarybymonth.xml',
+        'report/report_payslip.xml',
         'report/hr_salary_books.xml',
     ],
     'demo': [
