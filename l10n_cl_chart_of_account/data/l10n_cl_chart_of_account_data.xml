@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="1">
+    <data>
         <menuitem id="account_reports_cl_statements_menu"
                   name="Chilean Statements"
                   parent="account.menu_finance"
@@ -19,18 +19,16 @@
             <field name="applicability">accounts</field>
         </record>-->
 
-        <!--<record id="cl_chart_template_sii" model="account.chart.template">
+        <record id="cl_chart_template_sii" model="account.chart.template">
             <field name="name">Chile - Plan de Cuentas SII</field>
             <field name="currency_id" ref="base.CLP" />
             <field name="bank_account_code_prefix">11012</field>
             <field name="cash_account_code_prefix">11011</field>
             <field name="transfer_account_code_prefix">117000</field>
             <field name="use_anglo_saxon" eval="True" />
-        </record>-->
+        </record>
 
         <!-- Account Templates -->
-
-
         <record id="110201" model="account.account.template">
             <field name="name">Fondos Mutuos</field>
             <field name="code">110201</field>

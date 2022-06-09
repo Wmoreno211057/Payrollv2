@@ -20,7 +20,7 @@
             <field name="name">Payroll</field>
             <field name="digits">0</field>
         </record>
-≤
+
         <record forcecreate="True" id="hr_payroll.decimal_payroll_rate"
                 model="decimal.precision">
             <field name="name">Payroll Rate</field>
@@ -96,10 +96,11 @@ else:
             <field name="amount_python_compute">result = round(0.005185*contract.wage*inputs.HEXDE.amount)*(-1)</field>
         </record>
 
-        <!--<record id="hr_rule_6" model="hr.salary.rule">
+        <record id="hr_rule_6" model="hr.salary.rule">
             <field name="name">GRATIFICACION LEGAL</field>
             <field name="sequence" eval="8"/>
             <field name="code">GRAT</field>
+            <field name="struct_id" ref="l10n_cl_hr.hr_struct_cl_work_code"/>
             <field name="category_id" ref="IMPONIBLE"/>
             <field name="condition_select">python</field>
             <field name="condition_python">result = (contract.gratificacion_legal is False)</field>
@@ -111,7 +112,7 @@ elif GRATI > (4.75 * payslip.indicadores_id.sueldo_minimo /12):
     result = round(((4.75 * payslip.indicadores_id.sueldo_minimo / 12) / 30) * worked_days.WORK100.number_of_days)
 else:
     result = GRATI</field>
-        </record>-->
+        </record>
 
         <record id="hr_rule_7" model="hr.salary.rule">
             <field name="name">BONO DE PRODUCCION</field>
