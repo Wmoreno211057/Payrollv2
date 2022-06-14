@@ -4,7 +4,7 @@ from odoo import api, fields, models, tools, _
 class hr_payslip_employees(models.TransientModel):
     _inherit = 'hr.payslip.employees'
 
-
+    
     def compute_sheet(self):
         indicadores_id = False
         if self.env.context.get('active_id'):

@@ -1,8 +1,18 @@
 from odoo import api, fields, models, tools, _
 
 
-class HrPayrollStructureType(models.Model):
-    _inherit = 'hr.payroll.structure.type'
-    _description = 'Tipo de Contrato'
+# class hr_contract_type(models.Model):
+#     _inherit = 'hr.contract.type'
+#     _description = 'Tipo de Contrato'
+#
+#     codigo = fields.Char('Codigo')
 
+class ContractType(models.Model):
+
+    _name = 'hr.contract.type'
+    _description = 'Tipo de Contrato'
+    _order = 'sequence, id'
+
+    name = fields.Char(string='Contract Type', required=True, translate=True)
+    sequence = fields.Integer(help="Gives the sequence when displaying a list of Contract.", default=10)
     codigo = fields.Char('Codigo')

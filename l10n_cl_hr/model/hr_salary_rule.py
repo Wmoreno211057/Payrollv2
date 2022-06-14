@@ -7,7 +7,8 @@ class hr_salary_rule(models.Model):
     
     date_start = fields.Date('Fecha Inicio',  help="Fecha de inicio de la regla salarial")
     date_end = fields.Date('Fecha Fin',  help="Fecha del fin de la regla salarial")
-    register_id = fields.Many2one(comodel_name="hr.contribution.register", string="Registro de Contribución")
+    register_id = fields.Many2one(comodel_name="hr.contribution.register",
+                                  string="Registro de Contribución")
     input_ids = fields.One2many('hr.rule.input', 'input_id', string='Inputs',
                                 copy=True)
 
@@ -34,4 +35,3 @@ class HrRuleInput(models.Model):
     name = fields.Char(string='Description', required=True)
     code = fields.Char(required=True, help="The code that can be used in the salary rules")
     input_id = fields.Many2one('hr.salary.rule', string='Salary Rule Input', required=True)
-

@@ -2,8 +2,7 @@
 <odoo>						
     <data>						
 
-       <!-- CCAF     -->
-
+        <!-- CCAF -->
         <record id="hr_ccaf_sin" model="hr.ccaf">
             <field name="codigo">00</field>
             <field name="name">SIN CCAF</field>

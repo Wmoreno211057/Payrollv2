@@ -143,7 +143,6 @@ class AccountTax(models.Model):
             return base_amount / (1 - self.amount / 100) - base_amount
 
 
-
     def compute_all(self, price_unit, currency=None, quantity=1.0, product=None, partner=None, uom_id=None):
         """ Returns all information required to apply taxes (in self + their children in case of a tax goup).
             We consider the sequence of the parent for group of taxes.
@@ -242,8 +241,8 @@ class AccountTax(models.Model):
                 'amount': tax_amount,
                 'base': tax_base,
                 'sequence': tax.sequence,
-                'account_id': tax.account_id.id,
-                'refund_account_id': tax.refund_account_id.id,
+                'account_id': tax.cash_basis_transition_account_id.id,
+                'refund_account_id': tax.refund_repartition_line_ids.id[0],
                 'analytic': tax.analytic,
                 'price_include': tax.price_include,
                 'tax_exigibility': tax.tax_exigibility,

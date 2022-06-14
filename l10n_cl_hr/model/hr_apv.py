@@ -6,3 +6,4 @@ class hr_apv(models.Model):
     _description = 'Institución Autorizada APV - APVC : Cias Seguros de Vida'
     codigo = fields.Char('Codigo', required=True)
     name = fields.Char('Nombre', required=True)
+

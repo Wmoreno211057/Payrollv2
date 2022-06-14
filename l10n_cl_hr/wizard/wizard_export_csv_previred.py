@@ -43,6 +43,7 @@ class WizardExportCsvPrevired(models.TransientModel):
         ('tab',"Tabulador"),
         ], string='Separador de Campos', default='dot_coma', required=True)
     
+    
     def show_view(self, name):
         search_ids = self.env['wizard.export.csv.previred'].search([])
         last_id = search_ids and max(search_ids)        
@@ -242,6 +243,7 @@ class WizardExportCsvPrevired(models.TransientModel):
             except:
                 pass
         return cadena
+    
     
     def action_generate_csv(self):
         employee_model = self.env['hr.employee']

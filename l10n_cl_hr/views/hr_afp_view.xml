@@ -29,7 +29,6 @@
 			</field>
 		</record>
 
-
 		<record id="hr_afp_action" model="ir.actions.act_window">
 		    <field name="name">Fondos de Pensión</field>
 		    <field name="type">ir.actions.act_window</field>

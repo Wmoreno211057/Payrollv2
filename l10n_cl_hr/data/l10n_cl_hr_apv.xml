@@ -2,9 +2,8 @@
 <odoo>						
     <data>						
 
-
-              <!-- Institución Autorizada APV - APVC : Cias Seguros de Vida -->
-        <record id="hr_apv_metlife" model="hr.apv">
+        <!-- Institución Autorizada APV - APVC : Cias Seguros de Vida -->
+        <record id="hr_apv_metlife_00" model="hr.apv">
             <field name="codigo">100</field>
             <field name="name">ABN AMRO (CHILE) SEGUROS DE VIDA S.A</field>
         </record>
@@ -90,7 +89,7 @@
         </record>
 
 
-        <record id="hr_apv_metlife" model="hr.apv">
+        <record id="hr_apv_metlife_01" model="hr.apv">
             <field name="codigo">121</field>
             <field name="name">METLIFE CHILE SEGUROS DE VIDA S.A</field>
         </record>

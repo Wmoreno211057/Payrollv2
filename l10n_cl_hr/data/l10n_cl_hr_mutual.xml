@@ -2,10 +2,7 @@
 <odoo>						
     <data>						
 
-
-
        <!-- MUTUAL     --> 
-
         <record id="hr_mutual_sin" model="hr.mutual">
             <field name="codigo">00</field>
             <field name="name">SIN MUTUAL</field>
@@ -26,7 +23,5 @@
             <field name="name">INSTITUTO DE SEGURIDAD DEL TRABAJO I.S.T</field>
         </record>
 
- 
-       
     </data>
 </odoo>                     

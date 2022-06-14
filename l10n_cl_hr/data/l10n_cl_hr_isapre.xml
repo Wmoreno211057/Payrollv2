@@ -2,9 +2,7 @@
 <odoo>						
     <data>						
 
-
         <!-- ISAPRES     -->
-
         <record id="hr_isapre_fonasa" model="hr.isapre">
             <field name="codigo">07</field>            
             <field name="rut">61603000-0</field>

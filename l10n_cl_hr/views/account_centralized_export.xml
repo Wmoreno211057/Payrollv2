@@ -26,7 +26,6 @@
             <field name="name">Account Centralized Report</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">wizard.export.account.centralized</field>
-
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
@@ -48,7 +47,6 @@
             <field name="name">Centralización Contable</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">account.centralized.excel</field>
-
             <field name="view_mode">tree,form</field>
             <field name="view_id" ref="view_account_centralized_history_excel" />
             <field name="target">new</field>

@@ -2,9 +2,7 @@
 <odoo>						
     <data>						
 
-
-              <!-- AFP -->
-
+        <!-- AFP -->
         <record id="hr_afp_modelo" model="hr.afp">
             <field name="codigo">34</field>
             <field name="rut"> </field>

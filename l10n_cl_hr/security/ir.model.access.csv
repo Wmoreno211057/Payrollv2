@@ -13,3 +13,4 @@ access_hr_salary_employee_month,hr.salary.employee.month,model_hr_salary_employe
 access_wizard_export_csv_previred,wizard.export.csv.previred,model_wizard_export_csv_previred,hr_payroll.group_hr_payroll_manager,1,1,1,1
 access_hr_contribution_register,hr.contribution.register,model_hr_contribution_register,hr_payroll.group_hr_payroll_manager,1,1,1,1
 access_hr_rule_input,hr.rule.input,model_hr_rule_input,hr_payroll.group_hr_payroll_manager,1,1,1,1
+access_hr_contract_type,hr.contract.type,model_hr_contract_type,hr_payroll.group_hr_payroll_manager,1,1,1,1

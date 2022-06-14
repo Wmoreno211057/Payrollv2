@@ -1,24 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<data noupdate="1">
+	<data noupdate="True">
 
+		<!-- Calendar Chile -->
 		<record id="hr_resource_monthly_cl" model="resource.calendar">
 			<field name="name">Mensual</field>
 			<field name="hours_per_day">9</field>
-			<field name="attendance_ids"
-				eval="[
-	                (0, 0, {'name': 'Lunes Mañana', 'dayofweek': '0', 'hour_from': 8.5, 'hour_to': 12.5, 'day_period': 'morning'}),
-	                (0, 0, {'name': 'Lunes Tarde', 'dayofweek': '0', 'hour_from': 13.5, 'hour_to': 18.5, 'day_period': 'afternoon'}),
-	                (0, 0, {'name': 'Martes Mañana', 'dayofweek': '1', 'hour_from': 8.5, 'hour_to': 12.5, 'day_period': 'morning'}),
-	                (0, 0, {'name': 'Martes Tarde', 'dayofweek': '1', 'hour_from': 13.5, 'hour_to': 18.5, 'day_period': 'afternoon'}),
-	                (0, 0, {'name': 'Miercoles Mañana', 'dayofweek': '2', 'hour_from': 8.5, 'hour_to': 12.5, 'day_period': 'morning'}),
-	                (0, 0, {'name': 'Miercoles Tarde', 'dayofweek': '2', 'hour_from': 13.5, 'hour_to': 18.5, 'day_period': 'afternoon'}),
-	                (0, 0, {'name': 'Jueves Mañana', 'dayofweek': '3', 'hour_from': 8.5, 'hour_to': 12.5, 'day_period': 'morning'}),
-	                (0, 0, {'name': 'Jueves Tarde', 'dayofweek': '3', 'hour_from': 13.5, 'hour_to': 18.5, 'day_period': 'afternoon'}),
-	                (0, 0, {'name': 'Viernes Mañana', 'dayofweek': '4', 'hour_from': 8.5, 'hour_to': 12.5, 'day_period': 'morning'}),
-	                (0, 0, {'name': 'Viernes Tarde', 'dayofweek': '4', 'hour_from': 13.5, 'hour_to': 18.5, 'day_period': 'afternoon'})
-	            ]" />
 		</record>
+
+		<!-- Attendances Chile -->
+		<record id="cl_attendance_00" model='resource.calendar.attendance'>
+			<field name='name'>Lunes Mañana</field>
+			<field name='dayofweek'>0</field>
+			<field name='hour_from'>8.5</field>
+			<field name='hour_to'>12.5</field>
+			<field name='day_period'>morning</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_01" model='resource.calendar.attendance'>
+			<field name='name'>Lunes Tarde</field>
+			<field name='dayofweek'>0</field>
+			<field name='hour_from'>13.5</field>
+			<field name='hour_to'>18.5</field>
+			<field name='day_period'>afternoon</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_02" model='resource.calendar.attendance'>
+			<field name='name'>Martes Mañana</field>
+			<field name='dayofweek'>1</field>
+			<field name='hour_from'>8.5</field>
+			<field name='hour_to'>12.5</field>
+			<field name='day_period'>morning</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_03" model='resource.calendar.attendance'>
+			<field name='name'>Martes Tarde</field>
+			<field name='dayofweek'>1</field>
+			<field name='hour_from'>13.5</field>
+			<field name='hour_to'>18.5</field>
+			<field name='day_period'>afternoon</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_04" model='resource.calendar.attendance'>
+			<field name='name'>Miércoles Mañana</field>
+			<field name='dayofweek'>2</field>
+			<field name='hour_from'>8.5</field>
+			<field name='hour_to'>12.5</field>
+			<field name='day_period'>morning</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_05" model='resource.calendar.attendance'>
+			<field name='name'>Miércoles Tarde</field>
+			<field name='dayofweek'>2</field>
+			<field name='hour_from'>13.5</field>
+			<field name='hour_to'>18.5</field>
+			<field name='day_period'>afternoon</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_06" model='resource.calendar.attendance'>
+			<field name='name'>Jueves Mañana</field>
+			<field name='dayofweek'>3</field>
+			<field name='hour_from'>8.5</field>
+			<field name='hour_to'>12.5</field>
+			<field name='day_period'>morning</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_07" model='resource.calendar.attendance'>
+			<field name='name'>Jueves Tarde</field>
+			<field name='dayofweek'>3</field>
+			<field name='hour_from'>13.5</field>
+			<field name='hour_to'>18.5</field>
+			<field name='day_period'>afternoon</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_08" model='resource.calendar.attendance'>
+			<field name='name'>Viernes Mañana</field>
+			<field name='dayofweek'>4</field>
+			<field name='hour_from'>8.5</field>
+			<field name='hour_to'>12.5</field>
+			<field name='day_period'>morning</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
+		<record id="cl_attendance_09" model='resource.calendar.attendance'>
+			<field name='name'>Viernes Tarde</field>
+			<field name='dayofweek'>4</field>
+			<field name='hour_from'>13.5</field>
+			<field name='hour_to'>18.5</field>
+			<field name='day_period'>afternoon</field>
+			<field name='calendar_id' ref="hr_resource_monthly_cl"/>
+		</record>
+
 
 		<record id="base.main_company" model="res.company">
 			<field name="resource_calendar_id" ref="hr_resource_monthly_cl" />
