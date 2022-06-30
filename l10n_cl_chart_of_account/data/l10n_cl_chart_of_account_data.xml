@@ -15,7 +15,6 @@
 		<field name="bank_account_code_prefix">11012</field>
 		<field name="cash_account_code_prefix">11011</field>
 		<field name="transfer_account_code_prefix">117000</field>
-		<field name="currency_id" ref="base.CLP"/>
 		<field name="use_anglo_saxon" eval="True" />
 	</record>
 
