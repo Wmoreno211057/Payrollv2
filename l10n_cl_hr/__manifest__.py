@@ -4,23 +4,22 @@
     'website': 'http://konos.cl',
     'license': 'AGPL-3',
     'depends': [
-            'hr',
-            'hr_holidays',
-            'hr_payroll',
-            'hr_payroll_account',
-        ],
+        'hr',
+        'hr_holidays',
+        'hr_payroll',
+        'hr_payroll_account',
+    ],
     'external_dependencies': {
         'python': [
-                'num2words'
-                ]
-        },
+            'num2words'
+        ]
+    },
     'contributors': [
         "Nelson Ramirez <info@konos.cl>",
         "Daniel Blanco Martin <daniel@blancomartin.com>",
         "Carlos Lopez Mite <celm1990@hotmail.com>",
         "Daniel Santibáñez Polanco <dsantibanez@globalresponse.cl>",
     ],
-    'license': 'AGPL-3',
     'version': '12.0.1.0.4',
     'description': """
 Chilean Payroll & Human Resources.

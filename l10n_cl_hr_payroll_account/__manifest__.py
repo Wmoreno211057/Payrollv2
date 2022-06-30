@@ -4,7 +4,7 @@
     'author': 'Konos',
     'license': 'AGPL-3',
     'category': 'Localization',
-    'depends': ['l10n_cl_hr', 'hr_payroll_account','l10n_cl_chart_of_account'],
+    'depends': ['l10n_cl_hr', 'hr_payroll_account', 'l10n_cl_chart_of_account'],
     'version': '12.0.0.0',
     'description': """
 Chilean Payroll Accounting hooks.
@@ -15,7 +15,7 @@ Chilean Payroll Accounting hooks.
 
     'auto_install': False,
     'website': 'https://konos.cl',
-    'data':[
+    'data': [
         'data/l10n_cl_hr_payroll_account_data.xml',
     ],
     'installable': True

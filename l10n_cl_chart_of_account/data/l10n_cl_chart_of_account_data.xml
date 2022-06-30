@@ -4,18 +4,23 @@
 		parent="account.menu_finance" sequence="3"
 		groups="account.group_account_user" />
 
+	<!-- Account Types -->
+	<record id="account_account_type_NCLASIFICADO" model="account.account.type">
+		<field name="name">Cuentas No Clasificadas</field>
+	</record>
+
 	<record id="cl_chart_template_sii" model="account.chart.template">
 		<field name="name">Chile - Plan de Cuentas SII</field>
 		<field name="currency_id" ref="base.CLP" />
 		<field name="bank_account_code_prefix">11012</field>
 		<field name="cash_account_code_prefix">11011</field>
 		<field name="transfer_account_code_prefix">117000</field>
+		<field name="currency_id" ref="base.CLP"/>
 		<field name="use_anglo_saxon" eval="True" />
 	</record>
 
+
 	<!-- Account Templates -->
-
-
 	<record id="110201" model="account.account.template">
 		<field name="name">Fondos Mutuos</field>
 		<field name="code">110201</field>
@@ -1212,7 +1217,7 @@
 		<field name="chart_template_id" ref="cl_chart_template_sii" />
 	</record>
 
-	<!--<record id="cl_chart_template_sii" model="account.chart.template">
+	<record id="cl_chart_template_sii" model="account.chart.template">
 		<field name="property_account_receivable_id" ref="110301" />
 		<field name="property_account_payable_id" ref="210201" />
 		<field name="property_account_expense_categ_id" ref="530201" />
@@ -1222,5 +1227,5 @@
 		<field name="property_stock_account_input_categ_id" ref="110605" />
 		<field name="property_stock_account_output_categ_id" ref="110606" />
 		<field name="property_stock_valuation_account_id" ref="110607" />
-	</record>-->
+	</record>
 </odoo>
